@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Arial-Regular";
+    font-display: swap;
+    src: url("Arial-Regular.woff2"),
+        url("Arial-Regular.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Arial-Italic";
+    font-display: swap;
+    src: url("Arial-Italic.woff2"),
+        url("Arial-Italic.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Georgia";
+    font-display: swap;
+    src: url("Georgia.woff2"),
+        url("Georgia.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Georgia-Italic";
+    font-display: swap;
+    src: url("Georgia-Italic.woff2"),
+        url("Georgia-Italic.woff");
+    font-weight: 400;
+}
