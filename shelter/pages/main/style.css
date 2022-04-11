@@ -1,0 +1,263 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.page {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial-Regular', Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #cdcdcd;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-main {
+    flex-grow: 1;
+}
+
+.page-footer {
+    flex-shrink: 0;
+}
+
+.page-header {
+    background: url("../../assets/images/start-screen-background.jpg") no-repeat;
+    background-size: cover;
+    padding: 60px 40px;
+}
+
+.page-header__wrapper {
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.logo__title {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #F1CDB3;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.logo__subtitle {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.main-nav {
+    margin-left: auto;
+}
+
+.main-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.main-nav__item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.main-nav__link {
+    color: #cdcdcd;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.main-nav__link--active {
+    border-bottom: 1px solid #F1CDB3;
+}
+
+.main-nav__link:hover {
+    background-color: #FFFFFF;
+    color: #292929;
+}
+
+.promo {
+    background: url("../../assets/images/start-screen-background.jpg") no-repeat;
+    background-size: cover;
+    padding: 0 40px;
+    margin-bottom: 80px;
+}
+
+.promo__wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.promo__heading {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 44px;
+    line-height: 58px;
+    margin: 0;
+    color: #FFFFFF;
+    max-width: 325px;
+    margin-bottom: 40px;
+}
+
+.promo__content {
+    max-width: 38%;
+    margin-right: 42px;
+    padding-top: 163px;
+}
+
+.promo__text {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.promo__image {
+    max-width: 58%;
+}
+
+.button {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: #292929;
+    padding: 15px 45px;
+    background-color: #f1cdb3;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.promo__button:hover {
+    background: #FDDCC4;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 215px 100px;
+    background: #ffffff;
+}
+
+.about__image {
+    width: 35%;
+}
+
+.about__content {
+    width: 50%;
+}
+
+.heading {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.about__text {
+    color: #4C4C4C;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.pets {
+    background-color: #F6F6F6;
+    padding: 80px 40px 100px;
+    text-align: center;
+}
+
+.pets__heading {
+    margin-bottom: 60px;
+}
+
+.pets__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.pets__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 9px;
+}
+
+.pets__item--button {
+    background-color: #fafafa;
+    border: 2px solid #F1CDB3;
+    margin-bottom: 30px;
+}
+
+.pets__photo {
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+.pets__name {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
+    margin: 0;
+    margin-bottom: 30px;
+}
